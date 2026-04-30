@@ -2,6 +2,8 @@
 layout: page
 title: Репетиторство
 permalink: /tutoring/
+nav: true
+nav_order: 7
 ---
 
 ## Что я предлагаю

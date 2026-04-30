@@ -2,6 +2,7 @@
 layout: page
 title: Достижения
 permalink: /achievements/
+nav: true
 nav_order: 3
 ---
 

@@ -2,6 +2,7 @@
 layout: page
 title: О себе
 permalink: /about/
+nav: true
 nav_order: 2
 ---
 
@@ -19,3 +20,4 @@ nav_order: 2
 
 ## Ценности
 Верить в ученика → дать ему инструменты → научить побеждать.
+
