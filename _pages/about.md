@@ -17,7 +17,7 @@ permalink: /
   <div class="col-md-4 text-center text-md-end">
     <img src="{{ '/assets/img/prof_pic.jpg' | prepend: site.baseurl }}" 
          alt="Вячеслав Чепелин" 
-         class="img-fluid shadow" 
+         class="img-fluid rounded shadow" 
          style="max-width: 250px;">
   </div>
 </div>
