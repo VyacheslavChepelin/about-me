@@ -18,14 +18,14 @@ keywords: репетитор, олимпиады, математика, инфо
 lang: ru         
 icon: 🎓      
 
-url: https://VyacheslavChepelin.github.io/about-me
-baseurl:        
+url: https://VyacheslavChepelin.github.io
+baseurl: /about-me 
 last_updated: true               
 impressum_path:                  
 back_to_top: true                
  
 
- 
+
 
 # -----------------------------------------------------------------------------
 # Theme
