@@ -9,7 +9,28 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/about-me/";
     },
-  },{id: "nav-мои-проекты",
+  },{id: "nav-вячеслав-чепелин",
+          title: "Вячеслав Чепелин",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/about-me/";
+          },
+        },{id: "nav-о-себе",
+          title: "О себе",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/about-me/about/";
+          },
+        },{id: "nav-достижения",
+          title: "Достижения",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/about-me/achievements/";
+          },
+        },{id: "nav-мои-проекты",
           title: "Мои проекты",
           description: "Здесь собраны мои различные проекты и ссылки на них",
           section: "Navigation",
@@ -30,12 +51,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/about-me/blog/";
           },
-        },{id: "nav-cv",
-          title: "CV",
+        },{id: "nav-резюме",
+          title: "Резюме",
           description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/about-me/cv/";
+          },
+        },{id: "nav-репетиторство",
+          title: "Репетиторство",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/about-me/tutoring/";
           },
         },{id: "post-a-post-with-plotly-js",
         
