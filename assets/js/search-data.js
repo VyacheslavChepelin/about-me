@@ -9,16 +9,9 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/about-me/";
     },
-  },{id: "nav-блог",
-          title: "Блог",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/about-me/blog/";
-          },
-        },{id: "nav-мои-проекты",
+  },{id: "nav-мои-проекты",
           title: "Мои проекты",
-          description: "A growing collection of your cool projects.",
+          description: "Здесь собраны мои различные проекты и ссылки на них",
           section: "Navigation",
           handler: () => {
             window.location.href = "/about-me/projects/";
@@ -29,6 +22,13 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/about-me/repositories/";
+          },
+        },{id: "nav-блог",
+          title: "Блог",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/about-me/blog/";
           },
         },{id: "nav-cv",
           title: "CV",
