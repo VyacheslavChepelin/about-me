@@ -11,9 +11,7 @@ contact_note: >
 description: >
   Олимпиадный репетитор по математике и информатике (призёр ВКОШП и ВСОШ), студент ИТМО.
   Занимаюсь бэкенд-разработкой на Python и C++.
-footer_text: >
-  © 2025 Вячеслав Чепелин. Сайт создан с помощью <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
-  и темы <a href="https://github.com/alshedivat/al-folio">al-folio</a>. Хостинг на <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+footer_text:
 keywords: репетитор, олимпиады, математика, информатика, ВСОШ, ВКОШП, ИТМО, Python, C++, телеграм-бот, парсинг, портфолио
 lang: ru         
 icon: 🎓      
