@@ -9,21 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/about-me/";
     },
-  },{id: "nav-вячеслав-чепелин",
-          title: "Вячеслав Чепелин",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/about-me/";
-          },
-        },{id: "nav-о-себе",
-          title: "О себе",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/about-me/about/";
-          },
-        },{id: "nav-достижения",
+  },{id: "nav-достижения",
           title: "Достижения",
           description: "",
           section: "Navigation",
@@ -36,13 +22,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/about-me/projects/";
-          },
-        },{id: "nav-repositories",
-          title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/about-me/repositories/";
           },
         },{id: "nav-блог",
           title: "Блог",
