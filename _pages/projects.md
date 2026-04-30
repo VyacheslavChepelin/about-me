@@ -5,7 +5,7 @@ permalink: /projects/
 description: Здесь собраны мои различные проекты и ссылки на них
 nav: true
 nav_order: 3
-display_categories: [work, fun, research]  # Добавьте сюда другие категории, например research
+display_categories: [work, fun, research]  
 horizontal: false
 ---
 

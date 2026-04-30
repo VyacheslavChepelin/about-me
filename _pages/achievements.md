@@ -2,6 +2,7 @@
 layout: page
 title: Достижения
 permalink: /achievements/
+nav_order: 3
 ---
 
 ## Олимпиадные успехи
