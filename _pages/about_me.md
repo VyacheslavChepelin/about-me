@@ -2,8 +2,7 @@
 layout: page
 title: О себе
 permalink: /about/
-nav: true
-nav_order: 2
+
 ---
 
 ## Образование
