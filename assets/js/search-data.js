@@ -23,13 +23,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/about-me/projects/";
           },
-        },{id: "nav-блог",
-          title: "Блог",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/about-me/blog/";
-          },
         },{id: "nav-резюме",
           title: "Резюме",
           description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
