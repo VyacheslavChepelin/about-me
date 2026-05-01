@@ -87,3 +87,42 @@ nav_order: 3
 - Регулярно решаю алгоритмические задачи (ct-itmo-aisd на C++/Python).
 - Преподаю в образовательном центре «Интеллект».
 - Все результаты подтверждены дипломами. Сканы могу предоставить по запросу.
+
+<!-- Подключение JS только если они ещё не загружены -->
+<script>
+  (function() {
+    // Проверяем наличие Bootstrap Collapse
+    if (typeof bootstrap === 'undefined' || typeof bootstrap.Collapse === 'undefined') {
+      var bs = document.createElement('script');
+      bs.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js';
+      document.body.appendChild(bs);
+      console.log('Bootstrap JS подгружен');
+    }
+    // Проверяем наличие Swiper
+    if (typeof Swiper === 'undefined') {
+      var sw = document.createElement('script');
+      sw.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
+      sw.onload = function() {
+        initSwiper();
+      };
+      document.body.appendChild(sw);
+    } else {
+      initSwiper();
+    }
+
+    function initSwiper() {
+      new Swiper('.mySwiper', {
+        loop: true,
+        speed: 800,
+        autoplay: { delay: 3000, disableOnInteraction: false },
+        pagination: { el: '.swiper-pagination', clickable: true },
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        slidesPerView: 1,
+        spaceBetween: 10,
+        breakpoints: {
+          768: { slidesPerView: 2, spaceBetween: 20 }
+        }
+      });
+    }
+  })();
+</script>
