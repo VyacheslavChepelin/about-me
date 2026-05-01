@@ -6,6 +6,8 @@ nav: true
 nav_order: 3
 ---
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print" onload="this.media='all'">
+
 ## 📸 Фотографии с олимпиад
 
 <div class="swiper mySwiper mt-4 pb-4">
@@ -88,29 +90,14 @@ nav_order: 3
 - Преподаю в образовательном центре «Интеллект».
 - Все результаты подтверждены дипломами. Сканы могу предоставить по запросу.
 
-<!-- Подключение JS только если они ещё не загружены -->
 <script>
   (function() {
-    // Проверяем наличие Bootstrap Collapse
-    if (typeof bootstrap === 'undefined' || typeof bootstrap.Collapse === 'undefined') {
-      var bs = document.createElement('script');
-      bs.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js';
-      document.body.appendChild(bs);
-      console.log('Bootstrap JS подгружен');
-    }
-    // Проверяем наличие Swiper
-    if (typeof Swiper === 'undefined') {
-      var sw = document.createElement('script');
-      sw.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
-      sw.onload = function() {
-        initSwiper();
-      };
-      document.body.appendChild(sw);
-    } else {
-      initSwiper();
-    }
-
+    // Функция инициализации Swiper
     function initSwiper() {
+      if (typeof Swiper === 'undefined') {
+        console.warn('Swiper ещё не загружен');
+        return;
+      }
       new Swiper('.mySwiper', {
         loop: true,
         speed: 800,
@@ -123,6 +110,23 @@ nav_order: 3
           768: { slidesPerView: 2, spaceBetween: 20 }
         }
       });
+    }
+
+    // Проверяем наличие Bootstrap Collapse
+    if (typeof bootstrap === 'undefined' || typeof bootstrap.Collapse === 'undefined') {
+      var bsScript = document.createElement('script');
+      bsScript.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js';
+      document.body.appendChild(bsScript);
+    }
+
+    // Проверяем наличие Swiper JS
+    if (typeof Swiper === 'undefined') {
+      var swScript = document.createElement('script');
+      swScript.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
+      swScript.onload = initSwiper;
+      document.body.appendChild(swScript);
+    } else {
+      initSwiper();
     }
   })();
 </script>
