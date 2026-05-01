@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-with-no-article
 title: Достижения
 permalink: /achievements/
 nav: true
@@ -7,8 +7,6 @@ nav_order: 3
 ---
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print" onload="this.media='all'">
-
-## 📸 Фотографии с олимпиад
 
 <div class="swiper mySwiper mt-4 pb-4">
   <div class="swiper-wrapper">
@@ -21,7 +19,7 @@ nav_order: 3
   <div class="swiper-button-prev"></div>
 </div>
 
-## 🏆 Мои олимпиады
+## Мои олимпиады
 
 <div class="row mt-4">
   <!-- Математика -->
@@ -85,9 +83,9 @@ nav_order: 3
   </div>
 </div>
 
-## 📜 Прочее
-- Регулярно решаю алгоритмические задачи (ct-itmo-aisd на C++/Python).
-- Преподаю в образовательном центре «Интеллект».
+## Прочее
+- Регулярно решаю алгоритмические задачи.
+- Преподаю в ГБУ ДО "Центр Интеллект"
 - Все результаты подтверждены дипломами. Сканы могу предоставить по запросу.
 
 <script>
