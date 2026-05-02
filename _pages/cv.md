@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-with-no-article
 title: Резюме и контакты
 permalink: /cv/
 nav: true
