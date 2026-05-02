@@ -16,7 +16,7 @@ nav_order: 5
         <i class="fas fa-envelope fa-2x me-3 text-primary"></i>
         <div>
           <h6 class="mb-0">Email</h6>
-          <small class="text-muted">slavachepelin@mail.ru</small>
+          <small class="text-secondary">slavachepelin@mail.ru</small>
         </div>
       </a>
 
@@ -24,7 +24,7 @@ nav_order: 5
         <i class="fab fa-telegram fa-2x me-3 text-info"></i>
         <div>
           <h6 class="mb-0">Telegram</h6>
-          <small class="text-muted">@slavachepelin</small>
+          <small class="text-secondary">@slavachepelin</small>
         </div>
       </a>
 
@@ -32,7 +32,7 @@ nav_order: 5
         <i class="fas fa-phone fa-2x me-3 text-success"></i>
         <div>
           <h6 class="mb-0">Телефон</h6>
-          <small class="text-muted">+7 (921) 350-83-99</small>
+          <small class="text-secondary">+7 (921) 350-83-99</small>
         </div>
       </a>
 
@@ -40,15 +40,15 @@ nav_order: 5
         <i class="fab fa-vk fa-2x me-3 text-primary"></i>
         <div>
           <h6 class="mb-0">ВКонтакте</h6>
-          <small class="text-muted">vk.com/slavachepelin</small>
+          <small class="text-secondary">vk.com/slavachepelin</small>
         </div>
       </a>
 
       <a href="https://github.com/VyacheslavChepelin" class="list-group-item list-group-item-action d-flex align-items-center contact-item" target="_blank">
-        <i class="fab fa-github fa-2x me-3 text-dark"></i>
+        <i class="fab fa-github fa-2x me-3 text-body"></i>
         <div>
           <h6 class="mb-0">GitHub</h6>
-          <small class="text-muted">VyacheslavChepelin</small>
+          <small class="text-secondary">VyacheslavChepelin</small>
         </div>
       </a>
 
@@ -56,8 +56,8 @@ nav_order: 5
   </div>
 </div>
 
-<div class="text-center text-muted mb-4">
-  <p>Предпочитаете мессенджеры? Напишите в Telegram — отвечаю быстрее всего.</p>
+<div class="text-center mb-4">
+  <p class="text-secondary">Предпочитаете мессенджеры? Напишите в Telegram — отвечаю быстрее всего.</p>
 </div>
 
 <hr>
@@ -71,18 +71,24 @@ nav_order: 5
        download>
        <i class="fas fa-download me-2"></i> Скачать резюме (PDF)
     </a>
-    <p class="text-muted small mt-2">Последнее обновление: весна 2026</p>
+    <p class="text-secondary small mt-2">Последнее обновление: весна 2026</p>
   </div>
 </div>
 
 <style>
-/* Гарантируем, что контакты корректно выглядят в тёмной и светлой темах */
+/* Базовые стили контактов */
 .contact-item {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
-/* При наведении слегка изменяем фон, чтобы было приятно */
-.contact-item:hover {
-  background-color: var(--bs-list-group-action-hover-bg, rgba(0,0,0,0.05));
+.contact-item h6 {
+  color: inherit; /* h6 наследует цвет родителя, не остаётся чёрным */
 }
-/* В тёмной теме фон элементов автоматически подстроится, если переменная определена */
+/* Принудительно для тёмной темы al‑folio (класс .dark у html) */
+html.dark .contact-item {
+  color: var(--bs-body-color) !important;
+  background-color: var(--bs-body-bg) !important;
+}
+html.dark .contact-item:hover {
+  background-color: var(--bs-list-group-action-hover-bg) !important;
+}
 </style>
