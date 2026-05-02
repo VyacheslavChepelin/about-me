@@ -1,12 +1,73 @@
 ---
-layout: cv
-permalink: /cv/
+layout: page
 title: Резюме
+permalink: /cv/
 nav: true
 nav_order: 5
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
-cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
 ---
+
+<!-- Кнопка скачивания PDF -->
+<div class="row justify-content-center mb-5">
+  <div class="col-md-6 text-center">
+    <a href="{{ '/assets/pdf/resume.pdf' | prepend: site.baseurl }}" 
+       class="btn btn-primary btn-lg" 
+       download>
+       <i class="fas fa-download me-2"></i> Скачать резюме (PDF)
+    </a>
+    <p class="text-muted small mt-2">Последнее обновление: весна 2026</p>
+  </div>
+</div>
+
+## 📞 Контакты
+
+<div class="row mt-4">
+  <div class="col-md-8 mx-auto">
+    <div class="list-group shadow-sm">
+      
+      <a href="mailto:slavachepelin@mail.ru" class="list-group-item list-group-item-action d-flex align-items-center">
+        <i class="fas fa-envelope fa-2x me-3 text-primary"></i>
+        <div>
+          <h6 class="mb-0">Email</h6>
+          <small class="text-muted">slavachepelin@mail.ru</small>
+        </div>
+      </a>
+
+      <a href="https://t.me/slavachepelin" class="list-group-item list-group-item-action d-flex align-items-center" target="_blank">
+        <i class="fab fa-telegram fa-2x me-3 text-info"></i>
+        <div>
+          <h6 class="mb-0">Telegram</h6>
+          <small class="text-muted">@slavachepelin</small>
+        </div>
+      </a>
+
+      <a href="tel:+79213508399" class="list-group-item list-group-item-action d-flex align-items-center">
+        <i class="fas fa-phone fa-2x me-3 text-success"></i>
+        <div>
+          <h6 class="mb-0">Телефон</h6>
+          <small class="text-muted">+7 (921) 350-83-99</small>
+        </div>
+      </a>
+
+      <a href="https://vk.com/slavachepelin" class="list-group-item list-group-item-action d-flex align-items-center" target="_blank">
+        <i class="fab fa-vk fa-2x me-3 text-primary"></i>
+        <div>
+          <h6 class="mb-0">ВКонтакте</h6>
+          <small class="text-muted">vk.com/slavachepelin</small>
+        </div>
+      </a>
+
+      <a href="https://github.com/VyacheslavChepelin" class="list-group-item list-group-item-action d-flex align-items-center" target="_blank">
+        <i class="fab fa-github fa-2x me-3 text-dark"></i>
+        <div>
+          <h6 class="mb-0">GitHub</h6>
+          <small class="text-muted">VyacheslavChepelin</small>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<div class="text-center mt-5">
+  <p class="text-muted">Предпочитаете мессенджеры? Напишите в Telegram — отвечаю быстрее всего.</p>
+</div>

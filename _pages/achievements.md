@@ -1,5 +1,5 @@
 ---
-layout: page-with-no-article
+layout: page
 title: Достижения
 permalink: /achievements/
 nav: true
