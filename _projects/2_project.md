@@ -4,7 +4,7 @@ title: CT Notes y2024
 description: 
 img: assets/img/ct-notes-icon.jpg
 importance: 2
-category: notes
+category: fun
 related_publications: false
 ---
 
