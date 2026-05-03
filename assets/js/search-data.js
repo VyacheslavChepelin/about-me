@@ -97,6 +97,11 @@ ninja.data = [{
           description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/about-me/projects/1_project/";
+            },},{id: "projects-ct-notes-y2024",
+          title: 'CT Notes y2024',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/about-me/projects/2_project/";
             },},{
         id: 'social-cv',
         title: 'CV',
