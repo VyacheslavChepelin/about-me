@@ -102,6 +102,16 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/about-me/projects/2_project/";
+            },},{id: "projects-персональный-сайт-портфолио",
+          title: 'Персональный сайт-портфолио',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/about-me/projects/3_project/";
+            },},{id: "projects-покерный-таймер",
+          title: 'Покерный таймер',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/about-me/projects/4_project/";
             },},{
         id: 'social-cv',
         title: 'CV',
