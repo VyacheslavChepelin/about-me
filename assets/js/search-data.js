@@ -107,6 +107,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/about-me/projects/4_project/";
+            },},{id: "projects-бэкенд-покерного-клуба",
+          title: 'Бэкенд покерного клуба',
+          description: "Telegram-бот и REST API для управления турнирами",
+          section: "Projects",handler: () => {
+              window.location.href = "/about-me/projects/5_project/";
             },},{
         id: 'social-cv',
         title: 'CV',
