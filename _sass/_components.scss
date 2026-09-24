@@ -259,3 +259,43 @@ ul.task-list input[type="checkbox"] {
 .d2h-diff-table {
   position: relative;
 }
+
+// Tutoring reviews & hero polish
+
+.review-card {
+  border: 1px solid var(--global-divider-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+}
+
+.review-chip {
+  display: inline-block;
+  margin: 0.15rem 0.25rem 0 0;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: color-mix(in srgb, var(--global-theme-color) 12%, transparent);
+  color: var(--global-theme-color);
+}
+
+.review-chip-result {
+  background: color-mix(in srgb, #198754 14%, transparent);
+  color: #198754;
+}
+
+html[data-theme="dark"] .review-chip-result {
+  color: #75b798;
+}
+
+.tutoring-cta {
+  border: 1px solid var(--global-divider-color);
+}
+
+.hero-about .lead {
+  font-size: 1.25rem;
+  line-height: 1.45;
+}

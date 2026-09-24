@@ -2,17 +2,28 @@
 layout: page
 title: Мои проекты
 permalink: /projects/
-description: Здесь собраны мои различные проекты и ссылки на них
+description: Рабочие и учебные проекты, а также текущая работа
 nav: true
-nav_order: 3
-display_categories: [work, fun, research]  
+nav_order: 4
+display_categories: [work, fun]
 horizontal: false
 ---
 
-<!-- pages/projects.md -->
+## Работа
+
+Сейчас совмещаю разработку и преподавание:
+
+- **Центр искусственного интеллекта и науки о данных СПбГУ** — текущее место работы.
+- **Преподаватель в ИТМО** (с 2025/26 учебного года).
+- Ранее — преподавание в образовательном центре «Интеллект».
+
+<a class="btn btn-primary m-1" href="{{ '/cv/' | relative_url }}">Резюме и контакты</a>
+<a class="btn btn-outline-primary m-1" href="{{ '/assets/pdf/resume.pdf' | relative_url }}" download>Скачать PDF</a>
+
+<hr class="my-4">
+
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
   {% for category in page.display_categories %}
     {% assign category_title = category %}
     {% case category %}
@@ -20,16 +31,15 @@ horizontal: false
         {% assign category_title = "Рабочие проекты" %}
       {% when "fun" %}
         {% assign category_title = "Учебные проекты" %}
-      {% when "research" %}
-        {% assign category_title = "Исследования" %}
-      <!-- Добавьте здесь другие категории по аналогии -->
     {% endcase %}
     <a id="{{ category }}" href=".#{{ category }}">
       <h2 class="category">{{ category_title }}</h2>
     </a>
+    {% if category == "fun" %}
+    <p class="text-muted mb-3">Курсы и лабораторные: ШАД, ИТМО (алгоритмы, GPGPU, оптимизация, теорвер), школьный проект. Приватные classroom/GitLab — без публичных ссылок, с описанием содержимого.</p>
+    {% endif %}
     {% assign categorized_projects = site.projects | where: "category", category %}
     {% assign sorted_projects = categorized_projects | sort: "importance" %}
-    <!-- Generate cards for each project -->
     {% if page.horizontal %}
     <div class="container">
       <div class="row row-cols-1 row-cols-md-2">
@@ -46,17 +56,9 @@ horizontal: false
     </div>
     {% endif %}
   {% endfor %}
-
 {% else %}
-
-<!-- Display projects without categories -->
-
 {% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
 {% if page.horizontal %}
-
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
     {% for project in sorted_projects %}

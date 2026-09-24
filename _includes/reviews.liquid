@@ -1,0 +1,56 @@
+{% comment %}
+  Renders reviews from the _reviews/ collection.
+  Usage: {% include reviews.liquid %}
+  Edit files in _reviews/ — see _reviews/README.md
+{% endcomment %}
+
+{% assign all_reviews = site.reviews | where_exp: "r", "r.name != nil and r.name != ''" | sort: "order" %}
+{% assign featured_reviews = all_reviews | where: "featured", true %}
+{% assign secondary_reviews = all_reviews | where: "featured", false %}
+
+{% if featured_reviews.size > 0 %}
+<div class="row reviews-featured mt-3">
+  {% for review in featured_reviews %}
+  <div class="col-md-4 mb-3">
+    <div class="card h-100 shadow-sm review-card">
+      <div class="card-body d-flex flex-column">
+        <p class="card-text flex-grow-1 mb-0">«{{ review.content | strip_html | strip }}»</p>
+        <div class="mt-3 pt-2 border-top">
+          <strong>{{ review.name }}</strong>
+          {% if review.role %}<br><small class="text-muted">{{ review.role }}</small>{% endif %}
+          {% if review.subject or review.result %}
+          <div class="small mt-2 review-meta">
+            {% if review.subject %}<span class="review-chip">{{ review.subject }}</span>{% endif %}
+            {% if review.result %}<span class="review-chip review-chip-result">{{ review.result }}</span>{% endif %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if secondary_reviews.size > 0 %}
+<div class="mt-3">
+  <button class="btn btn-link text-decoration-none p-0" type="button" data-bs-toggle="collapse" data-bs-target="#moreReviews" aria-expanded="false" aria-controls="moreReviews">
+    Ещё отзывы ({{ secondary_reviews.size }})
+  </button>
+  <div class="collapse mt-3" id="moreReviews">
+    {% for review in secondary_reviews %}
+    <blockquote class="border-start border-3 ps-3 mb-3" style="border-color: var(--global-theme-color) !important;">
+      <p class="mb-1">«{{ review.content | strip_html | strip }}»</p>
+      <footer class="blockquote-footer mb-0">
+        {{ review.name }}{% if review.role %} — {{ review.role }}{% endif %}
+        {% if review.result %} · {{ review.result }}{% endif %}
+      </footer>
+    </blockquote>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+{% if all_reviews.size == 0 %}
+<p class="text-muted">Отзывы скоро появятся.</p>
+{% endif %}

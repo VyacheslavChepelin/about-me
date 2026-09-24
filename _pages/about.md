@@ -2,58 +2,69 @@
 layout: about
 title: Вячеслав Чепелин
 permalink: /
+social: true
+announcements:
+  enabled: true
+  scrollable: false
+  limit: 5
 ---
 
-<div class="row align-items-center mb-5">
+<div class="hero-about row align-items-center mb-4">
   <div class="col-md-8">
     <p class="lead mb-2">
-      Олимпиадный репетитор по математике и информатике,<br>
-      призёр и победитель олимпиад I уровня, бекэнд-программист
+      Олимпиадный репетитор по математике и информатике.<br>
+      Готовлю к ВСОШ, перечневым и алгоритмическому программированию.
     </p>
-    <p class="text-muted mb-3">Студент ИТМО (ПМИ, КТ), средний балл 4.73</p>
-    <a href="{{ '/tutoring/' | prepend: site.baseurl }}" class="btn btn-primary m-1">🎓 Записаться на занятия</a>
-    <a href="{{ '/projects/' | prepend: site.baseurl }}" class="btn btn-outline-primary m-1">💻 Мои проекты</a>
+    <p class="text-muted mb-3">
+      Студент ИТМО (ПМИ, КТ) · преподаватель ИТМО · Центр ИИ и науки о данных СПбГУ
+    </p>
+    <a href="{{ '/tutoring/' | relative_url }}" class="btn btn-primary btn-lg m-1">Записаться на занятия</a>
+    <a href="https://t.me/slavachepelin" class="btn btn-outline-primary m-1" target="_blank" rel="noopener">Написать в Telegram</a>
   </div>
-  <div class="col-md-4 text-center text-md-end">
-    <img src="{{ '/assets/img/prof_pic.jpg' | prepend: site.baseurl }}" 
-         alt="Вячеслав Чепелин" 
-         class="img-fluid rounded-circle shadow" 
-         style="max-width: 250px;">
+  <div class="col-md-4 text-center text-md-end mt-3 mt-md-0">
+    <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}"
+         alt="Вячеслав Чепелин"
+         class="img-fluid rounded-circle shadow"
+         style="max-width: 240px;">
   </div>
 </div>
 
 <hr>
 
-## 🚀 Почему я?
+## Почему я
 
 <div class="row">
   <div class="col-md-6">
     <ul>
-      <li>🏆 <strong>Призер Технокубка, Физтеха, победитель ОММО</strong>, победитель региона ВСОШ по математике и информатике и других олимпиад</li>
-      <li>🎓 Студент <strong>ИТМО (ПМИ, КТ)</strong>, средний балл <strong>4.73</strong></li>
-      <li>👨‍🏫 Преподаю в образовательном центре «Интеллект»</li>
+      <li><strong>Призёр Технокубка, Физтеха, победитель ОММО</strong>; победитель региона ВСОШ по математике и информатике</li>
+      <li>Студент <strong>ИТМО (ПМИ, КТ)</strong>, средний балл <strong>4.73</strong></li>
+      <li><strong>Преподаватель ИТМО</strong> с 2025/26 учебного года</li>
     </ul>
   </div>
   <div class="col-md-6">
     <ul>
-      <li>💻 Разрабатываю бэкенды на Python (FastAPI, asyncio), телеграм-ботов и парсеры</li>
-      <li>🧠 Объясняю сложное простым языком --- готовлю к олимпиадам любого уровня</li>
-      <li>⚡ Заряжен на развитие и получение знаний</li>
+      <li>Работаю в <strong>Центре ИИ и науки о данных СПбГУ</strong></li>
+      <li>Бэкенд на Python (FastAPI, asyncio), боты и парсеры</li>
+      <li>Объясняю сложное просто — готовлю к олимпиадам любого уровня</li>
     </ul>
   </div>
 </div>
 
-## 🎯 Мои направления
-- **Олимпиадная математика и информатика** - от регионального этапа до перечневых олимпиад
-- **Алгоритмическое программирование** - Python и C++, подготовка к Технокубку и собеседованиям
-- **Разработка на заказ** - парсинг, боты, автоматизация рутины
+## Направления
 
-## 💬 Мои ценности
-Верить в ученика → дать ему инструменты → научить побеждать.  
-Каждое занятие строю так, чтобы ученик сам находил решения, а не заучивал шаблоны.
+- **Олимпиадная математика и информатика** — от региона до перечневых
+- **Алгоритмическое программирование** — Python и C++, Технокубок и собеседования
+- **Разработка** — парсинг, боты, автоматизация
+
+## Как я учу
+
+Верить в ученика → дать инструменты → научить побеждать.
+Каждое занятие строю так, чтобы ты сам находил решения, а не заучивал шаблоны.
 
 <hr>
 
 <div class="text-center">
-  <p>Готовы начать? Напишите мне в Telegram или заполните форму на странице <a href="{{ '/tutoring/' | prepend: site.baseurl }}">Репетиторство</a>.</p>
+  <p class="mb-3">Готов начать? Напиши в Telegram или зайди на страницу репетиторства.</p>
+  <a href="https://t.me/slavachepelin" class="btn btn-primary m-1" target="_blank" rel="noopener">@slavachepelin</a>
+  <a href="{{ '/tutoring/' | relative_url }}" class="btn btn-outline-primary m-1">Подробнее о занятиях</a>
 </div>
