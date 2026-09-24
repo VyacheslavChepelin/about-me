@@ -13,15 +13,15 @@ profile:
   image_circular: true
 ---
 
-Олимпиадный репетитор по математике и информатике.  
-Готовлю к ВСОШ, перечневым и алгоритмическому программированию.
+<p class="intro-kicker">Олимпиадный репетитор по математике и информатике.<br>
+Готовлю к ВСОШ, перечневым и алгоритмическому программированию.</p>
 
-Студент ИТМО (ПМИ, КТ) · преподаватель ИТМО и «Интеллект» · Центр ИИ и науки о данных СПбГУ
+<p class="intro-meta">Студент ИТМО (ПМИ, КТ) · преподаватель ИТМО и «Интеллект» · Центр ИИ и науки о данных СПбГУ</p>
 
-<p>
-  <a href="{{ '/tutoring/' | relative_url }}" class="btn btn-primary m-1">Записаться на занятия</a>
-  <a href="https://t.me/slavachepelin" class="btn btn-outline-primary m-1" target="_blank" rel="noopener">Написать в Telegram</a>
-</p>
+<div class="site-cta">
+  <a href="{{ '/tutoring/' | relative_url }}" class="btn btn-primary">Записаться на занятия</a>
+  <a href="https://t.me/slavachepelin" class="btn btn-outline-primary" target="_blank" rel="noopener">Написать в Telegram</a>
+</div>
 
 ## Почему я
 
@@ -40,11 +40,15 @@ profile:
 
 ## Как я учу
 
-Верить в ученика → дать инструменты → научить побеждать.  
-Каждое занятие строю так, чтобы ты сам находил решения, а не заучивал шаблоны.
+<div class="manifesto">
+  Верить в ученика → дать инструменты → научить побеждать.<br>
+  Каждое занятие строю так, чтобы ты сам находил решения, а не заучивал шаблоны.
+</div>
 
----
-
-Готов начать? Напиши в Telegram или зайди на страницу репетиторства.
-
-[Telegram: @slavachepelin](https://t.me/slavachepelin) · [Подробнее о занятиях]({{ '/tutoring/' | relative_url }})
+<div class="closing-band">
+  <p>Готов начать? Напиши в Telegram или зайди на страницу репетиторства.</p>
+  <div class="site-cta" style="justify-content: center; margin-bottom: 0;">
+    <a href="https://t.me/slavachepelin" class="btn btn-primary" target="_blank" rel="noopener">@slavachepelin</a>
+    <a href="{{ '/tutoring/' | relative_url }}" class="btn btn-outline-primary">Подробнее о занятиях</a>
+  </div>
+</div>

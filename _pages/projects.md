@@ -11,16 +11,18 @@ horizontal: false
 
 ## Работа
 
-Сейчас совмещаю разработку и преподавание:
-
-- **Центр искусственного интеллекта и науки о данных СПбГУ** — текущее место работы.
-- **Преподаватель в ИТМО** (с 2025/26 учебного года).
-- **Преподаватель в ГБУ ДО «Центр Интеллект»**.
-
-<a class="btn btn-primary m-1" href="{{ '/cv/' | relative_url }}">Резюме и контакты</a>
-<a class="btn btn-outline-primary m-1" href="{{ '/assets/pdf/resume.pdf' | relative_url }}" download>Скачать PDF</a>
-
-<hr class="my-4">
+<div class="work-panel">
+<p>Сейчас совмещаю разработку и преподавание:</p>
+<ul>
+  <li><strong>Центр искусственного интеллекта и науки о данных СПбГУ</strong> — текущее место работы.</li>
+  <li><strong>Преподаватель в ИТМО</strong> (с 2025/26 учебного года).</li>
+  <li><strong>Преподаватель в ГБУ ДО «Центр Интеллект»</strong>.</li>
+</ul>
+<div class="site-cta" style="margin-bottom: 0;">
+  <a class="btn btn-primary" href="{{ '/cv/' | relative_url }}">Резюме и контакты</a>
+  <a class="btn btn-outline-primary" href="{{ '/assets/pdf/resume.pdf' | relative_url }}" download>Скачать PDF</a>
+</div>
+</div>
 
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}

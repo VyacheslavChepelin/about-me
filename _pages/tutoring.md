@@ -7,12 +7,12 @@ nav_order: 2
 description: Подготовка к олимпиадам по математике и информатике
 ---
 
-<div class="tutoring-cta text-center mb-4 p-4">
+<div class="tutoring-cta text-center mb-4">
   <p class="lead mb-3">Готовим к олимпиадам так, чтобы ты понимал идеи — а не зубрил шаблоны.</p>
-  <p class="mb-0">
-    <a href="https://t.me/slavachepelin" class="btn btn-primary btn-lg m-1" target="_blank" rel="noopener">Написать в Telegram</a>
-    <a href="#prices" class="btn btn-primary m-1">Смотреть цены</a>
-  </p>
+  <div class="site-cta" style="justify-content: center; margin-bottom: 0;">
+    <a href="https://t.me/slavachepelin" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Написать в Telegram</a>
+    <a href="#prices" class="btn btn-outline-primary">Смотреть цены</a>
+  </div>
 </div>
 
 ## Для кого
@@ -37,11 +37,11 @@ description: Подготовка к олимпиадам по математи�
 
 ## Кейсы
 
-**Информатика** — регион → призёр перечневой за сезон  
-
-**Математика** — уверенный рост до победы на ОММО  
-
-**Два предмета** — параллельная подготовка к регионам  
+<div class="case-list">
+  <div class="case-item"><strong>Информатика</strong><span>регион → призёр перечневой за сезон</span></div>
+  <div class="case-item"><strong>Математика</strong><span>уверенный рост до победы на ОММО</span></div>
+  <div class="case-item"><strong>Два предмета</strong><span>параллельная подготовка к регионам</span></div>
+</div>
 
 Подробнее об олимпиадном опыте — на странице [Достижения]({{ '/achievements/' | relative_url }}).
 
@@ -52,13 +52,16 @@ description: Подготовка к олимпиадам по математи�
 ## Стоимость
 {: #prices}
 
-- Индивидуально: **2 500 ₽ / 60 мин.**
-- Мини-группа (3–5 человек): **1 500 ₽ с человека / 60 мин.**
-- Летний интенсив (8 занятий по 90 минут): **10 000 ₽**
-- Формат: онлайн или Санкт-Петербург
+<ul class="price-list">
+  <li><span>Индивидуально · 60 мин</span><span class="price">2 500 ₽</span></li>
+  <li><span>Мини-группа 3–5 чел. · 60 мин</span><span class="price">1 500 ₽</span></li>
+  <li><span>Летний интенсив · 8 × 90 мин</span><span class="price">10 000 ₽</span></li>
+  <li><span>Формат</span><span>онлайн или Санкт-Петербург</span></li>
+</ul>
 
----
-
-Напиши, из какого ты класса и какая цель — подберём план.
-
-[Telegram: @slavachepelin](https://t.me/slavachepelin)
+<div class="closing-band">
+  <p>Напиши, из какого ты класса и какая цель — подберём план.</p>
+  <div class="site-cta" style="justify-content: center; margin-bottom: 0;">
+    <a href="https://t.me/slavachepelin" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Telegram: @slavachepelin</a>
+  </div>
+</div>

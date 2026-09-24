@@ -11,22 +11,14 @@ description: Олимпиады по математике и информати�
 
 ## Топ-результаты
 
-<div class="row mb-4">
-  <div class="col-md-6 mb-3">
-    <ul class="list-unstyled mb-0">
-      <li class="mb-2"><strong>ВСОШ информатика</strong> — победитель региона (2023, 2024)</li>
-      <li class="mb-2"><strong>ВСОШ математика</strong> — победитель региона (2023, 2024)</li>
-      <li class="mb-2"><strong>ВКОШП</strong> — призёр финала (2024)</li>
-    </ul>
-  </div>
-  <div class="col-md-6 mb-3">
-    <ul class="list-unstyled mb-0">
-      <li class="mb-2"><strong>Технокубок</strong> — призёр, 1 уровень (2023)</li>
-      <li class="mb-2"><strong>Физтех</strong> — призёр, 1 уровень (2023)</li>
-      <li class="mb-2"><strong>ОММО</strong> — победитель, 2 уровень (2023)</li>
-    </ul>
-  </div>
-</div>
+<ul class="top-results">
+  <li><strong>ВСОШ · информатика</strong>победитель региона · 2023, 2024</li>
+  <li><strong>ВСОШ · математика</strong>победитель региона · 2023, 2024</li>
+  <li><strong>ВКОШП</strong>призёр финала · 2024</li>
+  <li><strong>Технокубок</strong>призёр, 1 уровень · 2023</li>
+  <li><strong>Физтех</strong>призёр, 1 уровень · 2023</li>
+  <li><strong>ОММО</strong>победитель, 2 уровень · 2023</li>
+</ul>
 
 <div class="swiper mySwiper mt-2 pb-4">
   <div class="swiper-wrapper">
