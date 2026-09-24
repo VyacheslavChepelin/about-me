@@ -5,7 +5,3 @@ cv_pdf: /assets/pdf/resume.pdf
 email: slavachepelin@mail.ru
 telegram_username: slavachepelin
 github_username: VyacheslavChepelin
-custom_social:
-  logo: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/vk.svg
-  title: VK
-  url: https://vk.com/slavachepelin
