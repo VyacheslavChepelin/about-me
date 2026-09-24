@@ -1,14 +1,15 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - VyacheslavChepelin
+  - SlavaChepelin
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - VyacheslavChepelin/about-me
+  - VyacheslavChepelin/ct-notes
+  - VyacheslavChepelin/aisd-notes
+  - VyacheslavChepelin/shad_python
+  - VyacheslavChepelin/school_project
+  - VyacheslavChepelin/poker-timer-project
+  - SlavaChepelin/ct-itmo-aisd
+  - SlavaChepelin/GPGPUTasks2026

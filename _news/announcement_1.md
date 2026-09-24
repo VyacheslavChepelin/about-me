@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2025-09-01 12:00:00
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Открыт набор на олимпиадные занятия по математике и информатике —
+<a href="{{ '/tutoring/' | relative_url }}">подробности и запись</a>.

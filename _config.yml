@@ -9,10 +9,10 @@ last_name: Чепелин
 contact_note: >
   Лучше всего написать мне в Telegram - там я отвечаю быстрее. Для формальных запросов используйте почту.
 description: >
-  Олимпиадный репетитор по математике и информатике (призёр ВКОШП и ВСОШ), студент ИТМО.
-  Занимаюсь бэкенд-разработкой на Python и C++.
+  Олимпиадный репетитор по математике и информатике (призёр ВКОШП и ВСОШ),
+  студент и преподаватель ИТМО, сотрудник Центра ИИ и науки о данных СПбГУ.
 footer_text:
-keywords: репетитор, олимпиады, математика, информатика, ВСОШ, ВКОШП, ИТМО, Python, C++, телеграм-бот, парсинг, портфолио
+keywords: репетитор, олимпиады, математика, информатика, ВСОШ, ВКОШП, ИТМО, преподаватель ИТМО, СПбГУ, Python, C++, портфолио
 lang: ru         
 icon: 🎓      
 
@@ -69,9 +69,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: assets/img/prof_pic.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -92,8 +92,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Блог
+blog_description: Заметки об олимпиадах, учёбе и разработке
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -119,27 +119,14 @@ giscus:
   dark_theme: dark # name of the dark color scheme (preferred works well with al-folio dark mode)
   light_theme: light # name of the light color scheme (preferred works well with al-folio light mode)
   emit_metadata: 0
-  lang: en
+  lang: ru
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
-# External sources.
-# If you have blog posts published on medium.com or other external sources,
-# you can display them in your blog by adding a link to the RSS feed.
-# Optional: Set default categories and tags for posts from each source.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+# External sources (disabled — no demo Medium/Google posts)
+external_sources: []
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -165,6 +152,8 @@ collections:
     output: true
   teachings:
     output: true
+  reviews:
+    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -280,8 +269,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Чепелин, Chepelin]
+  first_name: [Вячеслав, В., Vyacheslav, V.]
 
   style: apa
   locale: en
@@ -307,10 +296,10 @@ scholar:
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
 enable_publication_badges:
-  altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
-  dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
-  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
-  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
+  altmetric: false # Altmetric badge
+  dimensions: false # Dimensions badge
+  google_scholar: false # Google Scholar badge
+  inspirehep: false # Inspire HEP badge
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
@@ -407,7 +396,7 @@ enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
-enable_navbar_social: false # enables displaying social links in the navbar on the about page
+enable_navbar_social: true # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
