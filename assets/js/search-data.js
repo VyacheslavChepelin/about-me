@@ -9,150 +9,181 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/about-me/";
     },
-  },{id: "nav-достижения",
+  },{id: "nav-репетиторство",
+          title: "Репетиторство",
+          description: "Подготовка к олимпиадам по математике и информатике",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/about-me/tutoring/";
+          },
+        },{id: "nav-достижения",
           title: "Достижения",
-          description: "",
+          description: "Олимпиады по математике и информатике",
           section: "Navigation",
           handler: () => {
             window.location.href = "/about-me/achievements/";
           },
         },{id: "nav-мои-проекты",
           title: "Мои проекты",
-          description: "Здесь собраны мои различные проекты и ссылки на них",
+          description: "Рабочие и учебные проекты, а также текущая работа",
           section: "Navigation",
           handler: () => {
             window.location.href = "/about-me/projects/";
           },
         },{id: "nav-резюме-и-контакты",
           title: "Резюме и контакты",
-          description: "",
+          description: "Контакты и резюме Вячеслава Чепелина",
           section: "Navigation",
           handler: () => {
             window.location.href = "/about-me/cv/";
           },
-        },{id: "nav-репетиторство",
-          title: "Репетиторство",
+        },{id: "news-открыт-набор-на-олимпиадные-занятия-по-математике-и-информатике-подробности-и-запись",
+          title: 'Открыт набор на олимпиадные занятия по математике и информатике — подробности и запись....',
           description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/about-me/tutoring/";
-          },
-        },{id: "post-a-post-with-plotly-js",
-        
-          title: "a post with plotly.js",
-        
-        description: "this is what included plotly.js code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/about-me/blog/2025/plotly/";
-          
-        },
-      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
-        
-          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
-          
-        },
-      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
-        
-          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
-          
-        },
-      },{id: "post-a-post-with-images",
-        
-          title: "a post with images",
-        
-        description: "this is what included images could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/about-me/blog/2015/images/";
-          
-        },
-      },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/about-me/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "projects-ct-notes-y2024",
-          title: 'CT Notes y2024',
-          description: "",
+          section: "News",},{id: "projects-оптимизация-лаб-1",
+          title: 'Оптимизация — лаб. 1',
+          description: "Градиентный спуск и метод Ньютона, оракулы и эксперименты",
           section: "Projects",handler: () => {
-              window.location.href = "/about-me/projects/2_project/";
-            },},{id: "projects-персональный-сайт-портфолио",
-          title: 'Персональный сайт-портфолио',
-          description: "",
+              window.location.href = "/about-me/projects/10_opt_lab1/";
+            },},{id: "projects-оптимизация-лаб-2",
+          title: 'Оптимизация — лаб. 2',
+          description: "Сопряжённые градиенты, L-BFGS и Hessian-free Ньютон",
           section: "Projects",handler: () => {
-              window.location.href = "/about-me/projects/3_project/";
-            },},{id: "projects-покерный-таймер",
-          title: 'Покерный таймер',
-          description: "",
+              window.location.href = "/about-me/projects/11_opt_lab2/";
+            },},{id: "projects-оптимизация-лаб-3",
+          title: 'Оптимизация — лаб. 3',
+          description: "Условная и негладкая оптимизация — proximal, Frank–Wolfe, barrier",
           section: "Projects",handler: () => {
-              window.location.href = "/about-me/projects/4_project/";
+              window.location.href = "/about-me/projects/12_opt_lab3/";
+            },},{id: "projects-оптимизация-лаб-4",
+          title: 'Оптимизация — лаб. 4',
+          description: "Стохастическая оптимизация — SGD, SVRG, Adam, Поляк–Рупперт",
+          section: "Projects",handler: () => {
+              window.location.href = "/about-me/projects/13_opt_lab4/";
+            },},{id: "projects-теория-вероятностей-лаб-1",
+          title: 'Теория вероятностей — лаб. 1',
+          description: "Пять задач и бонус — аналитика плюс симуляции",
+          section: "Projects",handler: () => {
+              window.location.href = "/about-me/projects/14_thv_lab1/";
+            },},{id: "projects-теория-вероятностей-лаб-2",
+          title: 'Теория вероятностей — лаб. 2',
+          description: "Четыре задачи — аналитика и программный эксперимент",
+          section: "Projects",handler: () => {
+              window.location.href = "/about-me/projects/15_thv_lab2/";
+            },},{id: "projects-продвинутый-python",
+          title: 'Продвинутый Python',
+          description: "Курс advanced-python — шесть домашних заданий",
+          section: "Projects",handler: () => {
+              window.location.href = "/about-me/projects/16_adv_python/";
+            },},{id: "projects-fp-warmup",
+          title: 'FP — Warmup',
+          description: "Вводные задачи курса ФП ИТМО на Haskell",
+          section: "Projects",handler: () => {
+              window.location.href = "/about-me/projects/17_fp_warmup/";
+            },},{id: "projects-fp-utlc",
+          title: 'FP — UTLC',
+          description: "Интерпретатор бестипового λ-исчисления (ulam)",
+          section: "Projects",handler: () => {
+              window.location.href = "/about-me/projects/18_fp_utlc/";
             },},{id: "projects-бэкенд-покерного-клуба",
           title: 'Бэкенд покерного клуба',
           description: "Telegram-бот и REST API для управления турнирами",
           section: "Projects",handler: () => {
-              window.location.href = "/about-me/projects/5_project/";
+              window.location.href = "/about-me/projects/1_project/";
+            },},{id: "projects-ct-notes-y2024",
+          title: 'CT Notes y2024',
+          description: "Конспекты по программе КТ ИТМО за 2024 год",
+          section: "Projects",handler: () => {
+              window.location.href = "/about-me/projects/2_project/";
+            },},{id: "projects-персональный-сайт-портфолио",
+          title: 'Персональный сайт-портфолио',
+          description: "Сайт о репетиторстве, олимпиадах и проектах на Jekyll",
+          section: "Projects",handler: () => {
+              window.location.href = "/about-me/projects/3_project/";
+            },},{id: "projects-покерный-таймер",
+          title: 'Покерный таймер',
+          description: "Полноэкранный таймер блайндов для покерных турниров",
+          section: "Projects",handler: () => {
+              window.location.href = "/about-me/projects/4_project/";
+            },},{id: "projects-shad-python-2025",
+          title: 'SHAD Python 2025',
+          description: "Домашние и практические задания курса Python ШАД",
+          section: "Projects",handler: () => {
+              window.location.href = "/about-me/projects/6_project/";
+            },},{id: "projects-school-project",
+          title: 'School Project',
+          description: "Telegram-бот и GUI для генерации заданий из банка ФИПИ",
+          section: "Projects",handler: () => {
+              window.location.href = "/about-me/projects/7_project/";
+            },},{id: "projects-алгоритмы-и-структуры-данных",
+          title: 'Алгоритмы и структуры данных',
+          description: "Решения задач AISD и конспекты по алгоритмам ИТМО",
+          section: "Projects",handler: () => {
+              window.location.href = "/about-me/projects/8_project/";
+            },},{id: "projects-gpgpu-2026",
+          title: 'GPGPU 2026',
+          description: "Задания курса по вычислениям на GPU (OpenCL)",
+          section: "Projects",handler: () => {
+              window.location.href = "/about-me/projects/9_project/";
+            },},{id: "reviews-01-anna",
+          title: '01 Anna',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/about-me/reviews/01-anna/";
+            },},{id: "reviews-02-dmitry",
+          title: '02 Dmitry',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/about-me/reviews/02-dmitry/";
+            },},{id: "reviews-03-elena",
+          title: '03 Elena',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/about-me/reviews/03-elena/";
+            },},{id: "reviews-04-ivan",
+          title: '04 Ivan',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/about-me/reviews/04-ivan/";
+            },},{id: "reviews-05-maria",
+          title: '05 Maria',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/about-me/reviews/05-maria/";
             },},{
         id: 'social-cv',
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/about-me/assets/pdf/example_pdf.pdf", "_blank");
+          window.open("/about-me/assets/pdf/resume.pdf", "_blank");
         },
       },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%73%6C%61%76%61%63%68%65%70%65%6C%69%6E@%6D%61%69%6C.%72%75", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-telegram',
+        title: 'telegram',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://telegram.me/slavachepelin", "_blank");
         },
       },{
-        id: 'social-rss',
-        title: 'RSS Feed',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("/about-me/feed.xml", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
+          window.open("https://github.com/VyacheslavChepelin", "_blank");
         },
       },{
         id: 'social-custom_social',
         title: 'Custom_social',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
+          window.open("https://vk.com/slavachepelin", "_blank");
         },
       },{
       id: 'light-theme',
