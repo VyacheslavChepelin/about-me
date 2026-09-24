@@ -1,16 +1,19 @@
 ---
 layout: page
 title: CT Notes y2024
-description: 
+description: Конспекты по программе КТ ИТМО за 2024 год
 img: assets/img/ct-notes-icon.jpg
-importance: 2
+importance: 1
 category: fun
 related_publications: false
 ---
 
-Здесь собраны конспекты Чепелина Вячеслава за 2024 год по программе КТ ИТМО.
+<p class="mb-4">
+  <a class="btn btn-sm btn-primary m-1" href="https://vyacheslavchepelin.github.io/ct-notes/" target="_blank" rel="noopener">Открыть сайт</a>
+  <a class="btn btn-sm btn-outline-primary m-1" href="https://github.com/VyacheslavChepelin/ct-notes" target="_blank" rel="noopener">Код на GitHub</a>
+</p>
 
-Проект включает конспекты по девяти ключевым предметам:
+Конспекты по программе КТ ИТМО за 2024 год — девять ключевых предметов:
 
 1. About & Links
 2. Линейная алгебра
@@ -25,9 +28,7 @@ related_publications: false
 ### Где найти
 
 - **Основной сайт**: [vyacheslavchepelin.github.io/ct-notes](https://vyacheslavchepelin.github.io/ct-notes/)
-- **Исходный код на GitHub**: [github.com/VyacheslavChepelin/ct-notes](https://github.com/VyacheslavChepelin/ct-notes)
-- **Остальные конспекты**: [дополнительная коллекция](https://vyacheslavchepelin.github.io/other-notes/)
+- **Исходный код**: [github.com/VyacheslavChepelin/ct-notes](https://github.com/VyacheslavChepelin/ct-notes)
+- **Другие конспекты**: [other-notes](https://vyacheslavchepelin.github.io/other-notes/)
 
-### Контрибьютинг
-
-Буду рад фидбеку и советам по улучшениям. Для этого делайте пулл-реквест с правками — буду рад помощи!
+Буду рад фидбеку — присылайте пулл-реквесты с правками.
